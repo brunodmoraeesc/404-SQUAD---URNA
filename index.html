@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URNA DASH</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <aside class="menu-lateral">
+    <div>
+      <div class="logo">404 SQUAD</div>
+      <nav class="navegacao">
+        <a href="#" class="item-menu ativo">Dashboard</a>
+        <a href="#" class="item-menu">Candidatos</a>
+        <a href="#" class="item-menu">Regiões</a>
+        <a href="#" class="item-menu">Relatórios</a>
+        <a href="#" class="item-menu">Configurações</a>
+      </nav>
+      
+    </div>
+
+    <div class="perfil-usuario">
+      <div class="foto-perfil"></div>
+      <div class="info-usuario">
+        <div class="nome">Bruno de Moraes</div>
+        <div class="cargo">Administrador</div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="conteudo-principal">
+    
+    <header class="cabecalho-pagina">
+      <div class="titulo-pagina">
+        <h1>Visão Geral das Eleições</h1>
+        <p class="subtitulo">Apuração ao vivo • 2º turno • Presidencial</p>
+      </div>
+      <span class="tag-status">• Atualização em tempo real</span>
+    </header>
+
+    <section class="grid-estatisticas">
+      <div class="cartao-estatistica">
+        <div class="rotulo-cartao">Votos Inválidos (Nulos)</div>
+        <div class="valor-cartao">4,8%</div>
+        <div class="detalhe-cartao">12.450 votos</div>
+      </div>
+
+      <div class="cartao-estatistica">
+        <div class="rotulo-cartao">Abstenção</div>
+        <div class="valor-cartao">45.200</div>
+        <div class="detalhe-cartao">14,2% não compareceram</div>
+      </div>
+
+      <div class="cartao-estatistica">
+        <div class="rotulo-cartao">Votos Totais</div>
+        <div class="valor-cartao" style="color: #3b82f6;">258.120</div>
+        <div class="detalhe-cartao">Votos apurados</div>
+      </div>
+
+      <div class="cartao-estatistica">
+        <div class="rotulo-cartao">Progresso das Urnas</div>
+        <div class="valor-cartao" style="color: #3b82f6;">92,4%</div>
+        <div class="barra-progresso">
+          <div class="progresso-preenchimento" style="width: 92.4%;"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="painel-central">
+      
+      <div class="secao-grafico">
+        <h2 class="titulo-secao">Votos por Candidato (Top 4)</h2>
+        <div class="container-grafico">
+          <div class="coluna-grafico destaque">
+            <div class="barra" style="height: 100%;"></div>
+            <span class="nome-candidato-grafico">Sofia Mendes</span>
+          </div>
+          <div class="coluna-grafico">
+            <div class="barra" style="height: 80%;"></div>
+            <span class="nome-candidato-grafico">Carlos Ramos</span>
+          </div>
+          <div class="coluna-grafico">
+            <div class="barra" style="height: 52%;"></div>
+            <span class="nome-candidato-grafico">Ana Silva</span>
+          </div>
+          <div class="coluna-grafico">
+            <div class="barra" style="height: 40%;"></div>
+            <span class="nome-candidato-grafico">Bruno Costa</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="secao-ranking">
+        <h2 class="titulo-secao">Ranking Geral</h2>
+        <div class="lista-ranking">
+          
+          <div class="item-ranking">
+            <div class="info-candidato-ranking">
+              <div class="avatar-candidato"></div>
+              <div>
+                <div class="nome-candidato">Sofia Mendes</div>
+                <div class="partido-candidato">PARTIDO AZUL</div>
+              </div>
+            </div>
+            <div class="votos-candidato">
+              <div class="porcentagem">34,5%</div>
+              <div class="total-votos">89.021 v</div>
+            </div>
+          </div>
+
+          <div class="item-ranking">
+            <div class="info-candidato-ranking">
+              <div class="avatar-candidato"></div>
+              <div>
+                <div class="nome-candidato">Carlos Ramos</div>
+                <div class="partido-candidato">ALIANÇA CENTRAL</div>
+              </div>
+            </div>
+            <div class="votos-candidato">
+              <div class="porcentagem">28,2%</div>
+              <div class="total-votos">72.769 v</div>
+            </div>
+          </div>
+
+          <div class="item-ranking">
+            <div class="info-candidato-ranking">
+              <div class="avatar-candidato"></div>
+              <div>
+                <div class="nome-candidato">Ana Silva</div>
+                <div class="partido-candidato">MOVIMENTO VERDE</div>
+              </div>
+            </div>
+            <div class="votos-candidato">
+              <div class="porcentagem">18,1%</div>
+              <div class="total-votos">46.719 v</div>
+            </div>
+          </div>
+
+          <div class="item-ranking">
+            <div class="info-candidato-ranking">
+              <div class="avatar-candidato"></div>
+              <div>
+                <div class="nome-candidato">Bruno Costa</div>
+                <div class="partido-candidato">FRENTE POPULAR</div>
+              </div>
+            </div>
+            <div class="votos-candidato">
+              <div class="porcentagem">14,4%</div>
+              <div class="total-votos">37.161 v</div>
+            </div>
+          </div>
+
+        </div>
+        <button class="botao-ver-tudo">Ver Lista Completa</button>
+      </div>
+
+    </section>
+
+    <footer class="rodape-acoes">
+      <div class="status-sistema">
+        <div class="item-status">
+          <span class="titulo-status">Status do Sistema</span>
+          <span class="valor-status seguro">Seguro e Criptografado</span>
+        </div>
+        <div class="item-status">
+          <span class="titulo-status">Última Sincronização</span>
+          <span class="valor-status">Há 2 minutos</span>
+        </div>
+      </div>
+
+      <div class="botoes-acao">
+        <button class="botao-secundario">Boletim de Urna</button>
+        <button class="botao-primario">Exportar Dados</button>
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+</html>

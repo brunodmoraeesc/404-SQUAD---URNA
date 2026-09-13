@@ -1,0 +1,343 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #0b0f19;
+      color: #ffffff;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Menu Lateral */
+    .menu-lateral {
+      width: 240px;
+      background-color: #111625;
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-right: 1px solid #1e2638;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #ffffff;
+    }
+
+    .navegacao {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .item-menu {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      color: #8f9bba;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+    }
+
+    .item-menu.ativo, .item-menu:hover {
+      background-color: #1a233a;
+      color: #3b82f6;
+    }
+
+    .perfil-usuario {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-top: 16px;
+      border-top: 1px solid #1e2638;
+    }
+
+    .foto-perfil {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: #3b82f6;
+    }
+
+    .info-usuario .nome {
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    .info-usuario .cargo {
+      font-size: 0.75rem;
+      color: #8f9bba;
+    }
+
+    /* Conteúdo Principal */
+    .conteudo-principal {
+      flex: 1;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .cabecalho-pagina {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .titulo-pagina h1 {
+      font-size: 1.5rem;
+      margin-bottom: 4px;
+    }
+
+    .subtitulo {
+      color: #8f9bba;
+      font-size: 0.85rem;
+    }
+
+    .tag-status {
+      background-color: rgba(16, 185, 129, 0.1);
+      color: #10b981;
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+
+    /* Grid de Estatísticas */
+    .grid-estatisticas {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .cartao-estatistica {
+      background-color: #111625;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #1e2638;
+    }
+
+    .rotulo-cartao {
+      color: #8f9bba;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    .valor-cartao {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .detalhe-cartao {
+      font-size: 0.75rem;
+      color: #8f9bba;
+    }
+
+    .barra-progresso {
+      width: 100%;
+      height: 6px;
+      background-color: #1e2638;
+      border-radius: 3px;
+      margin-top: 12px;
+      overflow: hidden;
+    }
+
+    .progresso-preenchimento {
+      height: 100%;
+      background-color: #3b82f6;
+      border-radius: 3px;
+    }
+
+    /* Layout Central (Gráfico e Ranking) */
+    .painel-central {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 16px;
+    }
+
+    .secao-grafico, .secao-ranking {
+      background-color: #111625;
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid #1e2638;
+    }
+
+    .titulo-secao {
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+
+    /* Estilização do Gráfico de Barras em CSS puro */
+    .container-grafico {
+      height: 220px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      gap: 16px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #1e2638;
+    }
+
+    .coluna-grafico {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      justify-content: flex-end;
+      flex: 1;
+    }
+
+    .barra {
+      width: 100%;
+      max-width: 60px;
+      background-color: #2a3447;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .coluna-grafico.destaque .barra {
+      background-color: #3b82f6;
+    }
+
+    .nome-candidato-grafico {
+      margin-top: 12px;
+      font-size: 0.75rem;
+      color: #8f9bba;
+    }
+
+    /* Lista de Ranking */
+    .lista-ranking {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .item-ranking {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .info-candidato-ranking {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar-candidato {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: #2a3447;
+    }
+
+    .nome-candidato {
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    .partido-candidato {
+      font-size: 0.7rem;
+      color: #8f9bba;
+    }
+
+    .votos-candidato {
+      text-align: right;
+    }
+
+    .porcentagem {
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    .total-votos {
+      font-size: 0.7rem;
+      color: #8f9bba;
+    }
+
+    .botao-ver-tudo {
+      width: 100%;
+      padding: 10px;
+      margin-top: 16px;
+      background-color: transparent;
+      border: 1px solid #1e2638;
+      color: #8f9bba;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+
+    /* Rodapé de Ações */
+    .rodape-acoes {
+      background-color: #111625;
+      padding: 16px 24px;
+      border-radius: 12px;
+      border: 1px solid #1e2638;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .status-sistema {
+      display: flex;
+      gap: 32px;
+    }
+
+    .item-status {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .titulo-status {
+      font-size: 0.7rem;
+      color: #8f9bba;
+      text-transform: uppercase;
+    }
+
+    .valor-status {
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    .valor-status.seguro {
+      color: #10b981;
+    }
+
+    .botoes-acao {
+      display: flex;
+      gap: 12px;
+    }
+
+    .botao-secundario {
+      background-color: #1a233a;
+      color: #ffffff;
+      border: 1px solid #1e2638;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+
+    .botao-primario {
+      background-color: #3b82f6;
+      color: #ffffff;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
