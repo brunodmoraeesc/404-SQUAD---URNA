@@ -12,7 +12,7 @@
       min-height: 100vh;
     }
 
-    /* Menu Lateral */
+    
     .menu-lateral {
       width: 240px;
       background-color: #111625;
@@ -80,7 +80,10 @@
       color: #8f9bba;
     }
 
-    /* Conteúdo Principal */
+
+
+
+
     .conteudo-principal {
       flex: 1;
       padding: 32px;
@@ -114,7 +117,8 @@
       font-size: 0.8rem;
     }
 
-    /* Grid de Estatísticas */
+
+
     .grid-estatisticas {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -162,7 +166,8 @@
       border-radius: 3px;
     }
 
-    /* Layout Central (Gráfico e Ranking) */
+
+
     .painel-central {
       display: grid;
       grid-template-columns: 2fr 1fr;
@@ -181,7 +186,8 @@
       margin-bottom: 24px;
     }
 
-    /* Estilização do Gráfico de Barras em CSS puro */
+    /* Por hora */
+
     .container-grafico {
       height: 220px;
       display: flex;
@@ -218,7 +224,7 @@
       color: #8f9bba;
     }
 
-    /* Lista de Ranking */
+
     .lista-ranking {
       display: flex;
       flex-direction: column;
@@ -280,7 +286,10 @@
       font-size: 0.85rem;
     }
 
-    /* Rodapé de Ações */
+
+
+
+    
     .rodape-acoes {
       background-color: #111625;
       padding: 16px 24px;
